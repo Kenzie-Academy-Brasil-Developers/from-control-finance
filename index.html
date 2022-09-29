@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link
+      rel="stylesheet"
+      href="./from-control-finance/styles/globalStyles.css"
+    />
+    <link rel="stylesheet" href="./from-control-finance/pages/home/index.css" />
+    <link rel="stylesheet" href="./from-control-finance/styles/button.css" />
+  </head>
+  <body>
+    <header>
+      <h1><span>Control</span> Finance</h1>
+      <button class="button-header">Registrar novo valor</button>
+    </header>
+    <main id="app">
+      <section class="first-section">
+        <h3>Resumo Financeiro</h3>
+
+        <div class="div-button">
+          <button class="buttons-div">Todos</button>
+          <button class="buttons-div">Entradas</button>
+          <button class="buttons-div">Saidas</button>
+        </div>
+      </section>
+      <section class="sum">
+        <h2 class="title-sum">Soma de valores</h2>
+        <p class="result-sum">R$2120,00</p>
+      </section>
+      <section class="section-register">
+        <p>40,00</p>
+        <div class="div-register">
+          <button class="button-secao">Entrada</button>
+          <button class="button-trash"><img src="./from-control-finance/assets/trash.svg" alt=""></button>
+        </div>
+      </section>
+    </main>
+    <script src="/scripts/modal.js"></script>
+    <script src="valuesData.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
