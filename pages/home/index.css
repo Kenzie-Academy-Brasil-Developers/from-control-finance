@@ -34,6 +34,10 @@ span {
   gap: 20px;
   flex-direction: column;
   height: 71px;
+  display: none;
+}
+.section-register{
+  display: none;
 }
 
 h3 {
@@ -130,7 +134,7 @@ h3 {
     align-items: center;
     background-color: var(--color-grey-4);
     border-radius: 8px;
-    height: 30px;
+    height: 40px;
   }
 
   .buttons-sum {

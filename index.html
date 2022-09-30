@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="./pages/home/index.css" />
     <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/modal.css">
   </head>
   <body>
     <header>
@@ -45,6 +46,31 @@
         </div>
        </div> -->
       </section>
+      <div class="modal">
+        <div class="div-modal-main">
+          <div class="modal-header">
+            <h2 class="h2-modal">Registro de valor</h2>
+            <button class="button-close-modal">x</button>
+          </div>
+          <div class="modal-body">
+            <p>Digite o valor e em seguida no botao referente ao tipo de valor</p>
+            <div class="div-input-modal">
+              <span class="span-modal">Valor</span>
+            <input class="input-modal" type="number" placeholder="R$ 00,00">
+            </div>
+          </div>
+          <span class="span-modal span-type-value">Tipo de valor</span>
+          <div class="modal-type-value">
+            
+            <button class="button-type-value">Entrada </button>
+            <button class="button-type-value">Saida</button>
+          </div>
+          <div class="modal-button-finale">
+            <button class="button-modal-value button-cancelar">Cancelar</button>
+            <button class="button-modal-value button-inserir">Inserir valor</button>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="/scripts/modal.js"></script>
     <script src="./pages/home/valuesData.js"></script>
