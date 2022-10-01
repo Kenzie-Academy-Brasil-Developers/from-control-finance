@@ -48,13 +48,12 @@
     font-size: 16px;
     color: black;
     font-weight: 500;
+    margin-right: 188px;
     
 }
 
 .span-type-value{
     margin-left: 25px;
-    position: absolute;
-    bottom: 400px;
 }
 
 .input-modal{
@@ -62,6 +61,8 @@
     border-radius: 8px;
     border: 1px solid var(--color-grey-3);
     font-size: 16px;
+    -webkit-appearance: none;
+    
 }
 
 .div-input-modal{
@@ -85,33 +86,65 @@
     margin-top: 20px; 
 }
 
+.div-body-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media (min-width: 700px){
     .div-modal-main{
         width: 49%;
         height: 46%;
     }
-    .modal-button-finale{
-        display: flex;
+   .modal-type-value{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    margin-left: 25px;
+    margin-top: 0;
+   }
+   .div-modal-main{
+    width: 35%;
+    height: 400px;
+    
+   }
+   .modal-button-finale{
+    display: flex;
     justify-content: flex-end;
-    margin-right: 26px;
-        margin-top: 10px;
-    }
-    .modal-type-value{
-       display: flex;
-       flex-direction: row;
-    width: 50%;
-    margin-left: 126px;
-    margin-bottom: 10px;
-    gap: 0;
-    }
+    gap: 18px;
+    margin: 20px 25px 0 0;
+   }
 
-    .modal-button-finale{
-        margin-top: 50px
-    }
+   .div-body-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-left:25px;
+   }
 
-    .span-type-value{
-        margin-left: 25px;
-    position: absolute;
-        bottom: 370px;
+   .span-modal{
+    margin-right: 0;
+   }
+   
+   
+}
+
+.show-modal {
+    animation: modalAnimation 1.2s ease;
+}
+
+
+@keyframes modalAnimation {
+    0%{
+     
+        transform: translateY(-50%);
+        
+    }
+    100%{
+       
+        transform: translateY(0);
+        
     }
 }

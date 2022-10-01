@@ -34,11 +34,9 @@ span {
   gap: 20px;
   flex-direction: column;
   height: 71px;
-  display: none;
+ 
 }
-.section-register{
-  display: none;
-}
+
 
 h3 {
   font-size: 15px;
