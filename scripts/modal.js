@@ -57,7 +57,7 @@ divBodyTwo.append(spanValue,divModalValue)
 divModalValue.append(buttonEntrada, buttonSaida)
 divModalFinale.append(buttonCancelar, buttonInserir)
 divModalMain.append(divHeader, divModalBody, divBodyTwo, divModalFinale )
-divModal.append(divModalMain)
+divModal.appendChild(divModalMain)
 
 return divModal
 

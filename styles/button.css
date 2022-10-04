@@ -9,7 +9,8 @@
     font-size: 15px;
 }
 
-.buttons-div:hover{
+
+.buttons-div{
     font-weight: 600;
     padding: 4px;
     border: 1px solid #6741D9;
@@ -29,6 +30,12 @@
     cursor: pointer;
 }
 
+.ativo, .buttons-div:hover {
+    background-color: var(--fixed-white);
+    color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+}
+
 .button-secao{
     width: 60px;
     height: 22px;
@@ -36,7 +43,7 @@
     background-color: var(--color-grey-4);
     border-radius: 4px;
     color: var(--color-grey-2);
-    cursor: pointer;
+   
 }
 
 .button-trash{
@@ -44,12 +51,25 @@
     cursor: pointer;
 }
 
+.button-trash:hover{
+    box-shadow: 2px 2px 5px var(--color-grey-2);
+}
+
+
+
 /* *******************MODAL******************* */
 .button-close-modal{
     border: none;
     font-size: 16px;
     cursor: pointer;
     background-color: var(--fixed-white);
+}
+
+
+
+.button-close-modal:hover{
+    font-weight: 600;
+
 }
 
 .button-type-value{
@@ -79,4 +99,23 @@
 .button-inserir{
     background-color: var(--color-brand-1);
     color: var(--fixed-white);
+}
+
+
+
+
+@media (min-width: 700px){
+    .button-header:hover{
+        opacity: 70%;
+    }
+    .button-inserir:hover{
+        opacity: 70%;
+    }
+    .button-cancelar:hover{
+        opacity: 70%;
+    }
+    
+    .button-inserir:hover{
+        opacity: 70%;
+    }
 }
