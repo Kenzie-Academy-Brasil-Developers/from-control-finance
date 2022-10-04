@@ -26,7 +26,7 @@ function clickButton  () {
     
 
    buttonDelete.forEach((button) => {
-    button.addEventListener('mouseover', () => {
+    button.addEventListener('click', () => {
       
         
       divRegister.remove()
