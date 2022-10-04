@@ -25,8 +25,8 @@ function clickButton  () {
     const divRegister = document.querySelector('.div-section-register')
     
 
-   buttonDelete.forEach((button) => {
-    button.addEventListener('click', () => {
+   buttonDelete.forEach((event) => {
+    event.addEventListener('click', () => {
       
         
       divRegister.remove()
