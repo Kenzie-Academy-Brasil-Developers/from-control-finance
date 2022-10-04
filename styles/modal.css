@@ -2,7 +2,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--color-grey-1-opacity-5);
     position: fixed;
     top: 0;
     display: flex;
@@ -52,9 +52,7 @@
     
 }
 
-.span-type-value{
-    margin-left: 25px;
-}
+
 
 .input-modal{
     height: 44px;
@@ -95,7 +93,7 @@
 @media (min-width: 700px){
     .div-modal-main{
         width: 49%;
-        height: 46%;
+        height: 46%;    
     }
    .modal-type-value{
     display: flex;
@@ -132,7 +130,9 @@
 }
 
 .show-modal {
-    animation: modalAnimation 1.2s ease;
+    animation: modalAnimation var(--animation-duration) var(--animation-type);
+   
+    
 }
 
 

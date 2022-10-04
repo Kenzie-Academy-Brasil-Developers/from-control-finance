@@ -1,5 +1,8 @@
     /* Desenvolva sua lógica aqui */
-    let renderRegister = (insertedValues) => {
+    let createRegister = (insertedValues) => {
+
+      const {  value} = insertedValues
+
         let divSectionRegister = document.createElement('div')
         let p = document.createElement('p')
         let div = document.createElement('div')
@@ -9,11 +12,14 @@
 
         divSectionRegister.classList.add('div-section-register')
         section.classList.add('section-register')
-        p.innerText = insertedValues.value
+        p.innerText = `R$ ${value}`
         div.classList.add('div-register')
         button.innerText = valuesCategory[0]
         button.classList.add('button-secao')
         buttonTrash.classList.add('button-trash')
+        
+      
+
         img.src = './assets/trash.svg'
 
         buttonTrash.append(img)
@@ -26,15 +32,16 @@
 
     let section = document.getElementById('section-register')
 
-    let listRegister = (register) => {
+    let renderRegister = (register) => {
+      
+      
 
-      section.innerHTML = ''
-
-      register.map((element) => {
-        let render = renderRegister(element)
+      register.forEach((element) => {
+        let render = createRegister(element)
         section.append(render)
         
       });
     }
 
-    listRegister(insertedValues)
+    renderRegister(insertedValues)
+
